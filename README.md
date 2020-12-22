@@ -32,4 +32,20 @@ By default, whenever you bring down the Docker network, your MySQL data will be 
 ```
 volumes:
   - ./mysql:/var/lib/mysql
-```# l8
+```
+
+## docker shortcut
+1. 
+```
+docker-compose exec mysql bash -l
+```
+2.
+```
+ docker-compose exec php php /var/www/html/artisan migrate
+```
+3.
+```
+docker-compose ps
+docker ps
+```
+
