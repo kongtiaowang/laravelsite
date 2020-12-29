@@ -14,6 +14,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return "index";
+        $title = "wang shen";
+        return view('welcome',compact('title'));
     }
 }
