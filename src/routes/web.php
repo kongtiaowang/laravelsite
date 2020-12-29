@@ -22,8 +22,8 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'index']);
 
 
-Route::get('/hello', function () {
-    return view('hello');
+Route::get('/services', function () {
+    return view('services');
 });
 
 Route::get('/about', function () {
@@ -46,7 +46,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('posts', 'App\Http\Controllers\PostsController');
 
 // Auth::routes();
 
